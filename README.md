@@ -1,8 +1,5 @@
 ## Welcome to Tic-Tac-Toe
 
-[![Build Status](https://travis-ci.org/rvindel/tic-tac-toe.svg?branch=master)](https://travis-ci.org/rvindel/tic-tac-toe)
-[![BCH compliance](https://bettercodehub.com/edge/badge/rvindel/tic-tac-toe?branch=master)](https://bettercodehub.com/)
-
 You can use the [editor on GitHub](https://github.com/rvindel/tic-tac-toe/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
