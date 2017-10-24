@@ -33,12 +33,15 @@ object ListBoard {
   def checkWinner(board: Board): Option[Player] = {
     def checkWinner(board: Board, combinations: List[List[Int]]): Option[Player] = {
       if (combinations.isEmpty) None
-      else
+      else if (combinations.head(board.last) == 0) {
+        checkWinner(board, combinations.tail)
+      } else {
         checkSolutionValue(board, combinations.head, 0, Player.FirstPlayer) match {
           case 3 => Some(Player.FirstPlayer)
           case -3 => Some(Player.SecondPlayer)
           case _ => checkWinner(board, combinations.tail)
         }
+      }
     }
 
     def checkSolutionValue(board: Board, combination: List[Int], points: Int, player: Player): Int = {
